@@ -1,0 +1,1 @@
+export const BRANDS_WHITELIST = ['clinique', 'l\'oreal', 'maybelline', 'nyx'];

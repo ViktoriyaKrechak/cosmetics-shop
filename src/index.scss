@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300;1,400;1,500;1,700&display=swap");
+@import "./reset";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  color: #965656;
+  margin: 0;
+}
