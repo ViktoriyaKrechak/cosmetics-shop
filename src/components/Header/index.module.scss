@@ -1,8 +1,7 @@
-$pale_rose:rgba(220, 176, 176, 0.824);
-@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Zilla+Slab:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Babylonica&family=Zilla+Slab:ital@1&display=swap");
 
 .link {
-  font-family: 'Zilla Slab', serif;
+  font-family: "Zilla Slab", serif;
   font-size: 18px;
   color: #965656d4;
   text-decoration: none;
@@ -15,18 +14,31 @@ $pale_rose:rgba(220, 176, 176, 0.824);
 }
 
 .wrap {
-  background: linear-gradient(180deg, rgb(220, 176, 176) 77%, rgb(220, 176, 176));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgb(220, 176, 176) 77%,
+    rgb(220, 176, 176)
+  );
+  z-index: 999;
+  padding: 0 15px;
 }
 
 .logo {
   margin-left: 10%;
   padding-top: 10px;
-  font-family: 'Babylonica', cursive;
+  font-family: "Babylonica", cursive;
   font-size: 35px;
   color: #fcfafad2;
 }
 
 .menu {
-  margin-left: 72%;
+  padding-top: 35px;
   padding-bottom: 15px;
+  padding-right: 5%;
 }

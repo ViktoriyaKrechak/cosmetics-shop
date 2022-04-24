@@ -1,0 +1,35 @@
+.product {
+  display: flex;
+  align-items: center;
+  min-height: 35px;
+
+  &.disabled {
+    background-color: #ccc;
+  }
+}
+
+.cell {
+  padding: 0 15px;
+}
+
+.title {
+  width: 50%;
+}
+
+.total {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #ccc;
+}
+
+.input {
+  font: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  background: #9656562a;
+  margin-left: 5px;
+  width: 100px;
+  height: 25px;
+  color: #965656;
+}

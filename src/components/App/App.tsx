@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.scss';
 import Main from '../Pages/Main'
-import useCards from '../../hooks/useCards';
 import { useRoutes } from 'react-router';
 import routes from '../../routes';
 

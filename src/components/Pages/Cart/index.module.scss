@@ -1,0 +1,33 @@
+.cart {
+  margin: 15px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 40px;
+  color: #965656;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+
+.products {
+  border: 1px solid #ccc;
+}
+
+.product {
+  & + & {
+    border-top: 1px solid #ccc;
+  }
+}
+
+.total_price {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 15px 0;
+}

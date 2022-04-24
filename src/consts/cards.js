@@ -1,32 +1,32 @@
 export const PRODUCT_TYPES = [
   {
-    type: 'Blush'
+    type: "Blush",
   },
   {
-    type: 'Bronzer'
+    type: "Bronzer",
   },
   {
-    type: 'Eyebrow'
+    type: "Eyebrow",
   },
   {
-    type: 'Eyeliner'
+    type: "Eyeliner",
   },
   {
-    type: 'Eyeshadow'
+    type: "Eyeshadow",
   },
   {
-    type: 'Foundation'
+    type: "Foundation",
   },
   {
-    type: 'Lip_liner'
+    type: "Lip liner",
   },
   {
-    type: 'Lipstick'
+    type: "Lipstick",
   },
   {
-    type: 'Mascara'
+    type: "Mascara",
   },
- {
-   type: 'Nail_polish'
- }
-]
+  {
+    type: "Nail polish",
+  },
+];

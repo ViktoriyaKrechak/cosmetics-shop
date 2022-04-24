@@ -3,40 +3,43 @@
 .imgs {
   min-height: 100vh;
   background: linear-gradient(180deg, rgb(220, 176, 176) 77%, rgb(255, 255, 255) 100%, rgb(220, 176, 176));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 800px) { 
+    min-height: 50vh;
+  }
+}
+
+.wrap_lips {
+  z-index: 1;
 }
 
 .img_lips {
-  min-width: 380px;
-  max-height: 450px;
-  margin: 4% 0 0 36%;
+  min-width: 420px;
+  max-height: 500px;
+}
+
+.img_beauty, .img_skinCare {
+  max-width: 480px;
+  min-height: 360px;
+  max-height: 400px;
+  @media (max-width: 1100px) { 
+    display: none;
+  }
+}
+
+.wrap_lips {
   transition: 1s;
-  z-index: 999;
-  position: relative;
   &:hover {
     transform: scale(1.2);
   }
 }
 
-.img_beauty {
-  min-width: 420px;
-  max-height: 300px;
+.wrap_beauty,.wrap_skinCare {
   transition: 1s;
-  position: absolute;
-  top: 30%;
   &:hover {
-    transform: scale(1.2);
-  }
-}
-
-.img_skinCare {
-  min-width: 420px;
-  max-height: 300px;
-  transition: 1s;
-  position: absolute;
-  top: 30%;
-  left: 9%;
-  &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
@@ -45,20 +48,35 @@
   font-size: 40px;
   color: #965656;
   text-align: center;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .bg_products {
-  background-color: #c7969645;
+  background: linear-gradient(180deg, rgba(230, 228, 228, 0.455), rgb(255, 255, 255) 100%, rgb(230, 225, 225) 77%);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: 1135px) { 
+    justify-content: center;
+  }
 }
 
 .img_pot {
   display: block;
   max-height: 550px;
   max-width: 850px;
+  @media (max-width: 1450px) { 
+    max-height: 500px;
+    max-width: 750px;
+  }
+  @media (max-width: 1330px) { 
+    max-height: 350px;
+    max-width: 500px;
+    align-self: center;
+  }
+  @media (max-width: 1135px) { 
+    display: none;
+  }
 }
 .list_products {
   display: flex;
@@ -82,21 +100,35 @@
   padding: 25px 35px;
   text-align: center;
   border-radius: 20px;
-  transition: 1s;
+  transition: 1.3s;
   cursor: pointer;
   margin: 0 0 40px 20px;
   &:hover {
     transform: scale(1.2);
     background-color: #965656e0;
     box-shadow: -2px 24px 25px -9px rgba(150, 86, 86, 0.7);
+    .link {
+      color: white;
+    }
   }
 }
 
 .link {
   text-decoration: none;
   color: #965656ba;
+  transition: 1.3s;
+}
+
+.brand_item {
+  box-shadow: -2px 24px 25px -9px rgba(144, 51, 51, 0.7);
+  padding: 25px 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.7s;
+  margin: 0 0 40px 40px;
   &:hover {
-    color: white;
+    transform: scale(1.1);
+    box-shadow: -2px 24px 25px -9px rgba(150, 86, 86, 0.7);
   }
 }
 
@@ -106,15 +138,10 @@
 }
 
 .img_brand {
-  max-width: 120px;
+  max-width: 130px;
   min-height: 20px;
   display: block;
   margin: 0 50px;
-  cursor: pointer;
-  transition: 1s;
-  &:hover {
-    transform: scale(1.2);
-  }
 }
 
 .list_brands {
@@ -123,7 +150,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  padding: 100px 0;
+  padding: 20px 0;
   max-width: 900px;
   margin: 0 auto;
 }

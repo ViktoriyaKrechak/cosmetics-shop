@@ -1,11 +1,23 @@
-import React from "react";
+import { useState } from 'react'
 import { NavLink } from "react-router-dom";
 import { joinClasses } from "../../helpers";
 
 import classes from "./index.module.scss";
 
 
+
 export default function Footer() {
+
+  const [email, setEmail] = useState('');
+
+  console.log(email);
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    localStorage.setItem('email', email );
+    alert('DONE!');
+  };
+  
   return (
     <div className={classes.wrap}>
       <div className={classes.subscribe}>
@@ -13,8 +25,8 @@ export default function Footer() {
           Subscribe to updates and promotions
         </div>
         <form>
-        <input type='email' required placeholder="Enter your email"/>
-        <button>
+        <input name='email' type='email' value={email} onChange={e => setEmail(e.target.value)} required placeholder="Enter your email"/>
+        <button onClick={handleFormSubmit}>
           Subscribe
         </button>
         </form>
@@ -27,4 +39,4 @@ export default function Footer() {
       <div className={classes.logo}>BeautyLab</div>
     </div>
   );
-}
+  }

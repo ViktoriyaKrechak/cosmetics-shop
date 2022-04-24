@@ -1,7 +1,7 @@
 export default {
-  products: {
-    types: {
-      blush: []
-    }
+  products: [],
+  attributes: {},
+  cart: {
+    products: {},
   },
-}
+};

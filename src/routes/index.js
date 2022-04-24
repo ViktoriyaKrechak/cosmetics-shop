@@ -1,9 +1,10 @@
 import Layout from "../components/Layout";
-import Contacts from "../components/Pages/Contacts";
 import Main from "../components/Pages/Main";
 import Product from "../components/Pages/Product";
 import Brand from "../components/Pages/Brand";
 import About from "../components/Pages/About";
+import Cart from "../components/Pages/Cart";
+import Favourites from "../components/Pages/Favourites";
 
 export default [
   {
@@ -25,6 +26,14 @@ export default [
       {
         path: 'about',
         element: <About />
+      },
+      {
+        path: 'cart',
+        element: <Cart />
+      },
+      {
+        path: 'favourites',
+        element: <Favourites />
       }
     ]
   }

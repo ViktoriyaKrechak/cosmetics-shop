@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 import { joinClasses } from "../../helpers";
 
@@ -14,12 +15,18 @@ const LINKS = [
     text: "About us",
   },
   {
-    to: "/sign",
-    text: "Sign in",
+    to: "/favourites",
+    text: "Favourites",
+  },
+  {
+    to: "/cart",
+    text: "Cart",
   },
 ];
 
 export default function Header() {
+  const cart = useSelector(({ cart }) => cart);
+
   return (
     <div className={classes.wrap}>
       <div className={classes.logo}>BeautyLab</div>
